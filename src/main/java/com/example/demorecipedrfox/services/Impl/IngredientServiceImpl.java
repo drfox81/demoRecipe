@@ -13,7 +13,9 @@ public class IngredientServiceImpl implements IngredientService {
 
     private static int idIngredient = 0;
 
-    private static Map<Integer, Ingredients> ingredientMap = new HashMap<>();
+
+    private static final Map<Integer, Ingredients> ingredientMap = new HashMap<>();
+
 
     public static int getIdIngredient() {
         return idIngredient;
